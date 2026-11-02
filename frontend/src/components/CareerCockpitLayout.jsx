@@ -20,11 +20,9 @@ const groups = [
   { label: 'PREPARATION', items: [
     { id: 'resume', label: 'Resume Analyzer', icon: 'file' },
     { id: 'interview', label: 'Interviews', icon: 'sparkles' },
-    { id: 'jobMatcher', label: 'Job Matcher', icon: 'target' },
   ] },
   { label: 'TRACKING', items: [
     { id: 'saved', label: 'Saved careers', icon: 'briefcase' },
-    { id: 'compare', label: 'Compare paths', icon: 'chart' },
     { id: 'applications', label: 'Applications', icon: 'briefcase' },
     { id: 'insights', label: 'Insights', icon: 'chart', accountOnly: true },
   ] },
