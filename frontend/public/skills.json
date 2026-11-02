@@ -1,0 +1,342 @@
+[
+  {
+    "id": "2.A.2.b",
+    "name": "Active Learning",
+    "category": "Essential"
+  },
+  {
+    "id": "2.A.1.b",
+    "name": "Active Listening",
+    "category": "Essential"
+  },
+  {
+    "id": "2.C.1.a",
+    "name": "Administration and Management",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.1.b",
+    "name": "Administrative",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.4.d",
+    "name": "Biology",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.3.d",
+    "name": "Building and Construction",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.4.c",
+    "name": "Chemistry",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.9.b",
+    "name": "Communications and Media",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.B.2.i",
+    "name": "Complex Problem Solving",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.C.3.a",
+    "name": "Computers and Electronics",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.B.1.b",
+    "name": "Coordination",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.A.2.a",
+    "name": "Critical Thinking",
+    "category": "Essential"
+  },
+  {
+    "id": "2.C.1.e",
+    "name": "Customer and Personal Service",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.3.c",
+    "name": "Design",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.1.c",
+    "name": "Economics and Accounting",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.6",
+    "name": "Education and Training",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.3.b",
+    "name": "Engineering and Technology",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.7.a",
+    "name": "English Language",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.B.3.j",
+    "name": "Equipment Maintenance",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.B.3.c",
+    "name": "Equipment Selection",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.C.7.c",
+    "name": "Fine Arts",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.2.b",
+    "name": "Food Production",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.7.b",
+    "name": "Foreign Language",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.4.g",
+    "name": "Geography",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.7.d",
+    "name": "History and Archeology",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.B.3.d",
+    "name": "Installation",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.B.1.e",
+    "name": "Instructing",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.B.4.e",
+    "name": "Judgment and Decision Making",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.C.8.b",
+    "name": "Law and Government",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.A.2.c",
+    "name": "Learning Strategies",
+    "category": "Essential"
+  },
+  {
+    "id": "2.B.5.b",
+    "name": "Management of Financial Resources",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.B.5.c",
+    "name": "Management of Material Resources",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.B.5.d",
+    "name": "Management of Personnel Resources",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.C.4.a",
+    "name": "Mathematics",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.A.1.e",
+    "name": "Mathematics",
+    "category": "Essential"
+  },
+  {
+    "id": "2.C.3.e",
+    "name": "Mechanical",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.5.a",
+    "name": "Medicine and Dentistry",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.A.2.d",
+    "name": "Monitoring",
+    "category": "Essential"
+  },
+  {
+    "id": "2.B.1.d",
+    "name": "Negotiation",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.B.3.h",
+    "name": "Operation and Control",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.B.3.a",
+    "name": "Operations Analysis",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.B.3.g",
+    "name": "Operations Monitoring",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.C.1.f",
+    "name": "Personnel and Human Resources",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.B.1.c",
+    "name": "Persuasion",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.C.7.e",
+    "name": "Philosophy and Theology",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.4.b",
+    "name": "Physics",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.2.a",
+    "name": "Production and Processing",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.B.3.e",
+    "name": "Programming",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.C.4.e",
+    "name": "Psychology",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.8.a",
+    "name": "Public Safety and Security",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.B.3.m",
+    "name": "Quality Control Analysis",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.A.1.a",
+    "name": "Reading Comprehension",
+    "category": "Essential"
+  },
+  {
+    "id": "2.B.3.l",
+    "name": "Repairing",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.C.1.d",
+    "name": "Sales and Marketing",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.A.1.f",
+    "name": "Science",
+    "category": "Essential"
+  },
+  {
+    "id": "2.B.1.f",
+    "name": "Service Orientation",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.B.1.a",
+    "name": "Social Perceptiveness",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.C.4.f",
+    "name": "Sociology and Anthropology",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.A.1.d",
+    "name": "Speaking",
+    "category": "Essential"
+  },
+  {
+    "id": "2.B.4.g",
+    "name": "Systems Analysis",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.B.4.h",
+    "name": "Systems Evaluation",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.B.3.b",
+    "name": "Technology Design",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.C.9.a",
+    "name": "Telecommunications",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.C.5.b",
+    "name": "Therapy and Counseling",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.B.5.a",
+    "name": "Time Management",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.C.10",
+    "name": "Transportation",
+    "category": "Knowledge"
+  },
+  {
+    "id": "2.B.3.k",
+    "name": "Troubleshooting",
+    "category": "Transferable"
+  },
+  {
+    "id": "2.A.1.c",
+    "name": "Writing",
+    "category": "Essential"
+  }
+]

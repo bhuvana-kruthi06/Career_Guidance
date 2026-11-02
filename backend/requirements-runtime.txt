@@ -1,0 +1,3 @@
+# Runtime dependencies for backend/matcher_cli.py. Data pipeline/dev dependencies stay in ../requirements.txt.
+numpy>=2.1.0
+pandas>=2.2.0

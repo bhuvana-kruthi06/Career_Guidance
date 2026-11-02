@@ -1,0 +1,26 @@
+# AI-Powered Personalised Career Guidance Platform
+# Python dependencies for the Data Science / Career Matching Engine
+# Install with: pip install -r requirements.txt
+
+# --- Core Data Processing ---
+# Using >= to allow pip to find pre-built wheels compatible with Python 3.15
+pandas>=2.2.0
+numpy>=2.1.0
+openpyxl>=3.1.0           # Required to read O*NET .xlsx files
+
+# --- Exploratory Data Analysis & Visualisation ---
+matplotlib>=3.9.0
+seaborn>=0.13.0
+plotly>=5.24.0
+
+# --- Reporting ---
+jinja2>=3.1.0             # For HTML report generation (future)
+
+# --- Testing ---
+pytest>=8.3.0
+pytest-cov>=5.0.0         # Test coverage reports
+
+# --- Utilities ---
+python-dotenv>=1.0.0      # For environment variables (API keys later)
+mysql-connector-python>=8.4.0  # Optional MySQL data loader dependency
+tqdm>=4.67.0              # Progress bars for large file processing

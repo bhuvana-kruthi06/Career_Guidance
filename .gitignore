@@ -1,0 +1,61 @@
+# ============================================================
+# AI-Career-Guidance — .gitignore
+# ============================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+target/
+node_modules/
+.pytest-workspace-temp/
+.eggs/
+
+# --- Virtual Environment ---
+venv/
+env/
+.venv/
+ENV/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- Data files (large — do not commit raw datasets to Git) ---
+data/raw/onet/
+data/raw/esco/
+data/processed/
+# Keep sample data (small, clearly labelled synthetic/sample files)
+!data/sample/
+
+# --- Reports & generated outputs ---
+reports/charts/
+reports/data_analysis_report.md
+# Keep implementation_status.md and feature recommendations (hand-written)
+
+# --- Environment & secrets ---
+.env
+*.env
+secrets.json
+config/secrets.yaml
+
+# --- IDE & OS ---
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Pytest ---
+.pytest_cache/
+htmlcov/
+.coverage

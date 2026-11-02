@@ -1,0 +1,718 @@
+
+======================================================================
+  DATA INSPECTION REPORT
+======================================================================
+Project  : AI-Powered Personalised Career Guidance Platform
+Generated: 2026-10-25 12:51:32
+Script   : data_processing/inspect_data.py
+Mode     : READ-ONLY — source files are never modified
+
+Attribution:
+  O*NET 31.0  — U.S. Dept of Labor, CC BY 4.0 — https://www.onetcenter.org
+  ESCO v1.2.1 — European Commission, CC BY 4.0 — https://esco.ec.europa.eu
+
+----------------------------------------------------------------------
+  O*NET 31.0 DATASET
+----------------------------------------------------------------------
+Directory: C:\Users\Bhuvana Kruthi\OneDrive\Documents\AI-Career-Guidance\data\raw\onet
+Files to inspect: 14
+
+FILE : Occupation Data.xlsx
+SOURCE: O*NET 31.0
+  Rows             : 1,016
+  Columns          : 3
+  Column names     : ['O*NET-SOC Code', 'Title', 'Description']
+  Data types:
+      O*NET-SOC Code                                str
+      Title                                         str
+      Description                                   str
+  Missing values   : None
+  Duplicate rows   : 0
+  Identifier columns detected:
+      O*NET-SOC Code                                1,016 unique values
+  Sample rows (first 3):
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Description: Determine and formulate policies and pro
+      O*NET-SOC Code: 11-1011.03 | Title: Chief Sustainability Officers | Description: Communicate and coordinate with manageme
+      O*NET-SOC Code: 11-1021.00 | Title: General and Operations Managers | Description: Plan, direct, or coordinate the operatio
+
+FILE : Knowledge.xlsx
+SOURCE: O*NET 31.0
+  Rows             : 60,060
+  Columns          : 15
+  Column names     : ['O*NET-SOC Code', 'Title', 'Element ID', 'Element Name', 'Scale ID', 'Scale Name', 'Data Value', 'N', 'Standard Error', 'Lower CI Bound', 'Upper CI Bound', 'Recommend Suppress', 'Not Relevant', 'Date', 'Domain Source']
+  Data types:
+      O*NET-SOC Code                                str
+      Title                                         str
+      Element ID                                    str
+      Element Name                                  str
+      Scale ID                                      str
+      Scale Name                                    str
+      Data Value                                    float64
+      N                                             float64
+      Standard Error                                float64
+      Lower CI Bound                                float64
+      Upper CI Bound                                float64
+      Recommend Suppress                            str
+      Not Relevant                                  str
+      Date                                          str
+      Domain Source                                 str
+  Missing values   : 6 column(s) have nulls
+      N                                             594 (0.99%)
+      Standard Error                                16,962 (28.24%)
+      Lower CI Bound                                17,698 (29.47%)
+      Upper CI Bound                                17,698 (29.47%)
+      Recommend Suppress                            16,434 (27.36%)
+      Not Relevant                                  30,030 (50.0%)
+  Duplicate rows   : 0
+  Identifier columns detected:
+      O*NET-SOC Code                                910 unique values
+      Element ID                                    33 unique values
+      Scale ID                                      2 unique values
+  Sample rows (first 3):
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 2.C.1.a | Element Name: Administration and Management | Scale ID: IM | Scale Name: Importance | Data Value: 4.78 | N: 28.0 | Standard Error: 0.1102 | Lower CI Bound: 4.5564 | Upper CI Bound: 5.0 | Recommend Suppress: N | Not Relevant: nan | Date: 08/2023 | Domain Source: Incumbent
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 2.C.1.a | Element Name: Administration and Management | Scale ID: LV | Scale Name: Level | Data Value: 6.5 | N: 28.0 | Standard Error: 0.213 | Lower CI Bound: 6.0666 | Upper CI Bound: 6.9409 | Recommend Suppress: N | Not Relevant: N | Date: 08/2023 | Domain Source: Incumbent
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 2.C.1.b | Element Name: Administrative | Scale ID: IM | Scale Name: Importance | Data Value: 2.42 | N: 28.0 | Standard Error: 0.4651 | Lower CI Bound: 1.4662 | Upper CI Bound: 3.3749 | Recommend Suppress: N | Not Relevant: nan | Date: 08/2023 | Domain Source: Incumbent
+
+FILE : Abilities.xlsx
+SOURCE: O*NET 31.0
+  Rows             : 94,640
+  Columns          : 15
+  Column names     : ['O*NET-SOC Code', 'Title', 'Element ID', 'Element Name', 'Scale ID', 'Scale Name', 'Data Value', 'N', 'Standard Error', 'Lower CI Bound', 'Upper CI Bound', 'Recommend Suppress', 'Not Relevant', 'Date', 'Domain Source']
+  Data types:
+      O*NET-SOC Code                                str
+      Title                                         str
+      Element ID                                    str
+      Element Name                                  str
+      Scale ID                                      str
+      Scale Name                                    str
+      Data Value                                    float64
+      N                                             int64
+      Standard Error                                float64
+      Lower CI Bound                                float64
+      Upper CI Bound                                float64
+      Recommend Suppress                            str
+      Not Relevant                                  str
+      Date                                          str
+      Domain Source                                 str
+  Missing values   : 1 column(s) have nulls
+      Not Relevant                                  47,320 (50.0%)
+  Duplicate rows   : 0
+  Identifier columns detected:
+      O*NET-SOC Code                                910 unique values
+      Element ID                                    52 unique values
+      Scale ID                                      2 unique values
+  Sample rows (first 3):
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 1.A.1.a.1 | Element Name: Oral Comprehension | Scale ID: IM | Scale Name: Importance | Data Value: 4.62 | N: 8 | Standard Error: 0.183 | Lower CI Bound: 4.2664 | Upper CI Bound: 4.9836 | Recommend Suppress: N | Not Relevant: nan | Date: 08/2023 | Domain Source: Analyst
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 1.A.1.a.1 | Element Name: Oral Comprehension | Scale ID: LV | Scale Name: Level | Data Value: 4.88 | N: 8 | Standard Error: 0.125 | Lower CI Bound: 4.63 | Upper CI Bound: 5.12 | Recommend Suppress: N | Not Relevant: N | Date: 08/2023 | Domain Source: Analyst
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 1.A.1.a.2 | Element Name: Written Comprehension | Scale ID: IM | Scale Name: Importance | Data Value: 4.25 | N: 8 | Standard Error: 0.1637 | Lower CI Bound: 3.9292 | Upper CI Bound: 4.5708 | Recommend Suppress: N | Not Relevant: nan | Date: 08/2023 | Domain Source: Analyst
+
+FILE : Essential Skills.xlsx
+SOURCE: O*NET 31.0
+  Rows             : 18,200
+  Columns          : 15
+  Column names     : ['O*NET-SOC Code', 'Title', 'Element ID', 'Element Name', 'Scale ID', 'Scale Name', 'Data Value', 'N', 'Standard Error', 'Lower CI Bound', 'Upper CI Bound', 'Recommend Suppress', 'Not Relevant', 'Date', 'Domain Source']
+  Data types:
+      O*NET-SOC Code                                str
+      Title                                         str
+      Element ID                                    str
+      Element Name                                  str
+      Scale ID                                      str
+      Scale Name                                    str
+      Data Value                                    float64
+      N                                             int64
+      Standard Error                                float64
+      Lower CI Bound                                float64
+      Upper CI Bound                                float64
+      Recommend Suppress                            str
+      Not Relevant                                  str
+      Date                                          str
+      Domain Source                                 str
+  Missing values   : 1 column(s) have nulls
+      Not Relevant                                  9,100 (50.0%)
+  Duplicate rows   : 0
+  Identifier columns detected:
+      O*NET-SOC Code                                910 unique values
+      Element ID                                    10 unique values
+      Scale ID                                      2 unique values
+  Sample rows (first 3):
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 2.A.1.a | Element Name: Reading Comprehension | Scale ID: IM | Scale Name: Importance | Data Value: 4.12 | N: 8 | Standard Error: 0.125 | Lower CI Bound: 3.88 | Upper CI Bound: 4.37 | Recommend Suppress: N | Not Relevant: nan | Date: 08/2023 | Domain Source: Analyst
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 2.A.1.a | Element Name: Reading Comprehension | Scale ID: LV | Scale Name: Level | Data Value: 4.62 | N: 8 | Standard Error: 0.183 | Lower CI Bound: 4.2664 | Upper CI Bound: 4.9836 | Recommend Suppress: N | Not Relevant: N | Date: 08/2023 | Domain Source: Analyst
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 2.A.1.b | Element Name: Active Listening | Scale ID: IM | Scale Name: Importance | Data Value: 4.0 | N: 8 | Standard Error: 0.0 | Lower CI Bound: 4.0 | Upper CI Bound: 4.0 | Recommend Suppress: N | Not Relevant: nan | Date: 08/2023 | Domain Source: Analyst
+
+FILE : Transferable Skills.xlsx
+SOURCE: O*NET 31.0
+  Rows             : 45,500
+  Columns          : 15
+  Column names     : ['O*NET-SOC Code', 'Title', 'Element ID', 'Element Name', 'Scale ID', 'Scale Name', 'Data Value', 'N', 'Standard Error', 'Lower CI Bound', 'Upper CI Bound', 'Recommend Suppress', 'Not Relevant', 'Date', 'Domain Source']
+  Data types:
+      O*NET-SOC Code                                str
+      Title                                         str
+      Element ID                                    str
+      Element Name                                  str
+      Scale ID                                      str
+      Scale Name                                    str
+      Data Value                                    float64
+      N                                             int64
+      Standard Error                                float64
+      Lower CI Bound                                float64
+      Upper CI Bound                                float64
+      Recommend Suppress                            str
+      Not Relevant                                  str
+      Date                                          str
+      Domain Source                                 str
+  Missing values   : 1 column(s) have nulls
+      Not Relevant                                  22,750 (50.0%)
+  Duplicate rows   : 0
+  Identifier columns detected:
+      O*NET-SOC Code                                910 unique values
+      Element ID                                    25 unique values
+      Scale ID                                      2 unique values
+  Sample rows (first 3):
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 2.B.1.a | Element Name: Social Perceptiveness | Scale ID: IM | Scale Name: Importance | Data Value: 4.12 | N: 8 | Standard Error: 0.125 | Lower CI Bound: 3.88 | Upper CI Bound: 4.37 | Recommend Suppress: N | Not Relevant: nan | Date: 08/2023 | Domain Source: Analyst
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 2.B.1.a | Element Name: Social Perceptiveness | Scale ID: LV | Scale Name: Level | Data Value: 4.25 | N: 8 | Standard Error: 0.1637 | Lower CI Bound: 3.9292 | Upper CI Bound: 4.5708 | Recommend Suppress: N | Not Relevant: N | Date: 08/2023 | Domain Source: Analyst
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 2.B.1.b | Element Name: Coordination | Scale ID: IM | Scale Name: Importance | Data Value: 4.25 | N: 8 | Standard Error: 0.1637 | Lower CI Bound: 3.9292 | Upper CI Bound: 4.5708 | Recommend Suppress: N | Not Relevant: nan | Date: 08/2023 | Domain Source: Analyst
+
+FILE : Task Statements.xlsx
+SOURCE: O*NET 31.0
+  Rows             : 18,838
+  Columns          : 8
+  Column names     : ['O*NET-SOC Code', 'Title', 'Task ID', 'Task', 'Task Type', 'Incumbents Responding', 'Date', 'Domain Source']
+  Data types:
+      O*NET-SOC Code                                str
+      Title                                         str
+      Task ID                                       int64
+      Task                                          str
+      Task Type                                     str
+      Incumbents Responding                         float64
+      Date                                          str
+      Domain Source                                 str
+  Missing values   : 2 column(s) have nulls
+      Task Type                                     418 (2.22%)
+      Incumbents Responding                         587 (3.12%)
+  Duplicate rows   : 0
+  Identifier columns detected:
+      O*NET-SOC Code                                923 unique values
+      Task ID                                       18,838 unique values
+  Sample rows (first 3):
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Task ID: 8823 | Task: Direct or coordinate an organization's f | Task Type: Core | Incumbents Responding: 95.0 | Date: 08/2023 | Domain Source: Incumbent
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Task ID: 8824 | Task: Confer with board members, organization  | Task Type: Core | Incumbents Responding: 95.0 | Date: 08/2023 | Domain Source: Incumbent
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Task ID: 8827 | Task: Prepare budgets for approval, including  | Task Type: Core | Incumbents Responding: 95.0 | Date: 08/2023 | Domain Source: Incumbent
+
+FILE : Education.xlsx
+SOURCE: O*NET 31.0
+  Rows             : 11,495
+  Columns          : 15
+  Column names     : ['O*NET-SOC Code', 'Title', 'Element ID', 'Element Name', 'Scale ID', 'Scale Name', 'Category', 'Data Value', 'N', 'Standard Error', 'Lower CI Bound', 'Upper CI Bound', 'Recommend Suppress', 'Date', 'Domain Source']
+  Data types:
+      O*NET-SOC Code                                str
+      Title                                         str
+      Element ID                                    str
+      Element Name                                  str
+      Scale ID                                      str
+      Scale Name                                    str
+      Category                                      float64
+      Data Value                                    float64
+      N                                             int64
+      Standard Error                                float64
+      Lower CI Bound                                float64
+      Upper CI Bound                                float64
+      Recommend Suppress                            str
+      Date                                          str
+      Domain Source                                 str
+  Missing values   : 5 column(s) have nulls
+      Category                                      683 (5.94%)
+      Standard Error                                3,121 (27.15%)
+      Lower CI Bound                                7,883 (68.58%)
+      Upper CI Bound                                7,883 (68.58%)
+      Recommend Suppress                            3,121 (27.15%)
+  Duplicate rows   : 0
+  Identifier columns detected:
+      O*NET-SOC Code                                901 unique values
+      Element ID                                    2 unique values
+      Scale ID                                      3 unique values
+  Sample rows (first 3):
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 2.D.1 | Element Name: Required Level of Education | Scale ID: RL | Scale Name: Required Level Of Education (Categories  | Category: 1.0 | Data Value: 0.0 | N: 28 | Standard Error: 0.0 | Lower CI Bound: nan | Upper CI Bound: nan | Recommend Suppress: N | Date: 08/2023 | Domain Source: Incumbent
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 2.D.1 | Element Name: Required Level of Education | Scale ID: RL | Scale Name: Required Level Of Education (Categories  | Category: 2.0 | Data Value: 4.46 | N: 28 | Standard Error: 4.1428 | Lower CI Bound: 0.6307 | Upper CI Bound: 25.5524 | Recommend Suppress: N | Date: 08/2023 | Domain Source: Incumbent
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 2.D.1 | Element Name: Required Level of Education | Scale ID: RL | Scale Name: Required Level Of Education (Categories  | Category: 3.0 | Data Value: 0.0 | N: 28 | Standard Error: 0.0 | Lower CI Bound: nan | Upper CI Bound: nan | Recommend Suppress: N | Date: 08/2023 | Domain Source: Incumbent
+
+FILE : Job Zones.xlsx
+SOURCE: O*NET 31.0
+  Rows             : 923
+  Columns          : 5
+  Column names     : ['O*NET-SOC Code', 'Title', 'Job Zone', 'Date', 'Domain Source']
+  Data types:
+      O*NET-SOC Code                                str
+      Title                                         str
+      Job Zone                                      int64
+      Date                                          str
+      Domain Source                                 str
+  Missing values   : None
+  Duplicate rows   : 0
+  Identifier columns detected:
+      O*NET-SOC Code                                923 unique values
+  Sample rows (first 3):
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Job Zone: 5 | Date: 08/2023 | Domain Source: Analyst
+      O*NET-SOC Code: 11-1011.03 | Title: Chief Sustainability Officers | Job Zone: 5 | Date: 08/2021 | Domain Source: Analyst
+      O*NET-SOC Code: 11-1021.00 | Title: General and Operations Managers | Job Zone: 4 | Date: 08/2023 | Domain Source: Analyst
+
+FILE : Content Model Reference.xlsx
+SOURCE: O*NET 31.0
+  Rows             : 3,006
+  Columns          : 3
+  Column names     : ['Element ID', 'Element Name', 'Description']
+  Data types:
+      Element ID                                    str
+      Element Name                                  str
+      Description                                   str
+  Missing values   : 1 column(s) have nulls
+      Description                                   2,419 (80.47%)
+  Duplicate rows   : 0
+  Identifier columns detected:
+      Element ID                                    3,006 unique values
+  Sample rows (first 3):
+      Element ID: 1 | Element Name: Worker Characteristics | Description: Personal traits and abilities that affec
+      Element ID: 1.A | Element Name: Abilities | Description: Natural talents and capabilities that af
+      Element ID: 1.A.1 | Element Name: Cognitive Abilities | Description: Abilities that influence the acquisition
+
+FILE : Software Skills.xlsx
+SOURCE: O*NET 31.0
+  Rows             : 31,821
+  Columns          : 7
+  Column names     : ['O*NET-SOC Code', 'Title', 'Workplace Example', 'Element ID', 'Element Name', 'Hot Technology', 'In Demand']
+  Data types:
+      O*NET-SOC Code                                str
+      Title                                         str
+      Workplace Example                             str
+      Element ID                                    str
+      Element Name                                  str
+      Hot Technology                                str
+      In Demand                                     str
+  Missing values   : None
+  Duplicate rows   : 0
+  Identifier columns detected:
+      O*NET-SOC Code                                923 unique values
+      Element ID                                    134 unique values
+  Sample rows (first 3):
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Workplace Example: Adobe Acrobat | Element ID: 2.E.5.b | Element Name: Document management software | Hot Technology: Y | In Demand: N
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Workplace Example: AdSense Tracker | Element ID: 2.E.6.f | Element Name: Data base user interface and query softw | Hot Technology: N | In Demand: N
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Workplace Example: Atlassian JIRA | Element ID: 2.E.5.a | Element Name: Content workflow software | Hot Technology: Y | In Demand: N
+
+FILE : Related Occupations.xlsx
+SOURCE: O*NET 31.0
+  Rows             : 18,460
+  Columns          : 6
+  Column names     : ['O*NET-SOC Code', 'Title', 'Related O*NET-SOC Code', 'Related Title', 'Relatedness Tier', 'Index']
+  Data types:
+      O*NET-SOC Code                                str
+      Title                                         str
+      Related O*NET-SOC Code                        str
+      Related Title                                 str
+      Relatedness Tier                              str
+      Index                                         int64
+  Missing values   : None
+  Duplicate rows   : 0
+  Identifier columns detected:
+      O*NET-SOC Code                                923 unique values
+      Related O*NET-SOC Code                        920 unique values
+  Sample rows (first 3):
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Related O*NET-SOC Code: 11-1021.00 | Related Title: General and Operations Managers | Relatedness Tier: Primary-Short | Index: 1
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Related O*NET-SOC Code: 13-1111.00 | Related Title: Management Analysts | Relatedness Tier: Primary-Short | Index: 2
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Related O*NET-SOC Code: 11-3031.01 | Related Title: Treasurers and Controllers | Relatedness Tier: Primary-Short | Index: 3
+
+FILE : Career Interest Types.xlsx
+SOURCE: O*NET 31.0
+  Rows             : 8,307
+  Columns          : 9
+  Column names     : ['O*NET-SOC Code', 'Title', 'Element ID', 'Element Name', 'Scale ID', 'Scale Name', 'Data Value', 'Date', 'Domain Source']
+  Data types:
+      O*NET-SOC Code                                str
+      Title                                         str
+      Element ID                                    str
+      Element Name                                  str
+      Scale ID                                      str
+      Scale Name                                    str
+      Data Value                                    float64
+      Date                                          str
+      Domain Source                                 str
+  Missing values   : None
+  Duplicate rows   : 0
+  Identifier columns detected:
+      O*NET-SOC Code                                923 unique values
+      Element ID                                    9 unique values
+      Scale ID                                      2 unique values
+  Sample rows (first 3):
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 1.B.1.a | Element Name: Realistic | Scale ID: OI | Scale Name: Occupational Interests | Data Value: 1.26 | Date: 02/2026 | Domain Source: Machine Learning/Expert
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 1.B.1.b | Element Name: Investigative | Scale ID: OI | Scale Name: Occupational Interests | Data Value: 3.05 | Date: 02/2026 | Domain Source: Machine Learning/Expert
+      O*NET-SOC Code: 11-1011.00 | Title: Chief Executives | Element ID: 1.B.1.c | Element Name: Artistic | Scale ID: OI | Scale Name: Occupational Interests | Data Value: 2.16 | Date: 02/2026 | Domain Source: Machine Learning/Expert
+
+FILE : Scales Reference.xlsx
+SOURCE: O*NET 31.0
+  Rows             : 33
+  Columns          : 4
+  Column names     : ['Scale ID', 'Scale Name', 'Minimum', 'Maximum']
+  Data types:
+      Scale ID                                      str
+      Scale Name                                    str
+      Minimum                                       int64
+      Maximum                                       int64
+  Missing values   : None
+  Duplicate rows   : 0
+  Identifier columns detected:
+      Scale ID                                      33 unique values
+  Sample rows (first 3):
+      Scale ID: AO | Scale Name: Automation | Minimum: 1 | Maximum: 5
+      Scale ID: CF | Scale Name: Frequency | Minimum: 1 | Maximum: 5
+      Scale ID: CN | Scale Name: Amount of Contact | Minimum: 1 | Maximum: 5
+
+----------------------------------------------------------------------
+  ESCO v1.2.1 DATASET
+----------------------------------------------------------------------
+Directory: C:\Users\Bhuvana Kruthi\OneDrive\Documents\AI-Career-Guidance\data\raw\esco
+Files to inspect: 10
+
+FILE : occupations_en.csv
+SOURCE: ESCO v1.2.1
+  Rows             : 3,043
+  Columns          : 15
+  Column names     : ['conceptType', 'conceptUri', 'iscoGroup', 'preferredLabel', 'altLabels', 'hiddenLabels', 'status', 'modifiedDate', 'regulatedProfessionNote', 'scopeNote', 'definition', 'inScheme', 'description', 'code', 'naceCode']
+  Data types:
+      conceptType                                   str
+      conceptUri                                    str
+      iscoGroup                                     int64
+      preferredLabel                                str
+      altLabels                                     str
+      hiddenLabels                                  str
+      status                                        str
+      modifiedDate                                  str
+      regulatedProfessionNote                       str
+      scopeNote                                     str
+      definition                                    str
+      inScheme                                      str
+      description                                   str
+      code                                          str
+      naceCode                                      str
+  Missing values   : 3 column(s) have nulls
+      hiddenLabels                                  3,035 (99.74%)
+      scopeNote                                     2,733 (89.81%)
+      definition                                    3,035 (99.74%)
+  Duplicate rows   : 0
+  Identifier columns detected:
+      conceptType                                   1 unique values
+      conceptUri                                    3,039 unique values
+      iscoGroup                                     426 unique values
+      hiddenLabels                                  8 unique values
+      code                                          3,039 unique values
+  Sample rows (first 3):
+      conceptType: Occupation | conceptUri: http://data.europa.eu/esco/occupation/00 | iscoGroup: 2654 | preferredLabel: technical director | altLabels: director of technical arts
+technical sup | hiddenLabels: nan | status: released | modifiedDate: 2024-01-25T11:28:50.295Z | regulatedProfessionNote: http://data.europa.eu/esco/regulated-pro | scopeNote: nan | definition: nan | inScheme: http://data.europa.eu/esco/concept-schem | description: Technical directors realise the artistic | code: 2654.1.7 | naceCode: http://data.europa.eu/ux2/nace2.1/9031
+      conceptType: Occupation | conceptUri: http://data.europa.eu/esco/occupation/00 | iscoGroup: 8121 | preferredLabel: metal drawing machine operator | altLabels: wire drawer
+forming machine operative
+dr | hiddenLabels: nan | status: released | modifiedDate: 2024-01-23T10:09:32.099Z | regulatedProfessionNote: http://data.europa.eu/esco/regulated-pro | scopeNote: nan | definition: nan | inScheme: http://data.europa.eu/esco/concept-schem | description: Metal drawing machine operators set up a | code: 8121.4 | naceCode: http://data.europa.eu/ux2/nace2.1/242
+      conceptType: Occupation | conceptUri: http://data.europa.eu/esco/occupation/00 | iscoGroup: 7543 | preferredLabel: precision device inspector | altLabels: precision device quality control supervi | hiddenLabels: nan | status: released | modifiedDate: 2024-01-25T15:00:12.188Z | regulatedProfessionNote: http://data.europa.eu/esco/regulated-pro | scopeNote: nan | definition: nan | inScheme: http://data.europa.eu/esco/concept-schem | description: Precision device inspectors make sure pr | code: 7543.10.3 | naceCode: http://data.europa.eu/ux2/nace2.1/2651
+
+FILE : skills_en.csv
+SOURCE: ESCO v1.2.1
+  Rows             : 13,960
+  Columns          : 13
+  Column names     : ['conceptType', 'conceptUri', 'skillType', 'reuseLevel', 'preferredLabel', 'altLabels', 'hiddenLabels', 'status', 'modifiedDate', 'scopeNote', 'definition', 'inScheme', 'description']
+  Data types:
+      conceptType                                   str
+      conceptUri                                    str
+      skillType                                     str
+      reuseLevel                                    str
+      preferredLabel                                str
+      altLabels                                     str
+      hiddenLabels                                  str
+      status                                        str
+      modifiedDate                                  str
+      scopeNote                                     str
+      definition                                    str
+      inScheme                                      str
+      description                                   str
+  Missing values   : 6 column(s) have nulls
+      skillType                                     5 (0.04%)
+      reuseLevel                                    5 (0.04%)
+      altLabels                                     18 (0.13%)
+      hiddenLabels                                  13,807 (98.9%)
+      scopeNote                                     13,724 (98.31%)
+      definition                                    13,958 (99.99%)
+  Duplicate rows   : 0
+  Identifier columns detected:
+      conceptType                                   1 unique values
+      conceptUri                                    13,939 unique values
+      hiddenLabels                                  153 unique values
+  Sample rows (first 3):
+      conceptType: KnowledgeSkillCompetence | conceptUri: http://data.europa.eu/esco/skill/0005c15 | skillType: skill/competence | reuseLevel: sector-specific | preferredLabel: manage musical staff | altLabels: manage music staff
+coordinate duties of  | hiddenLabels: nan | status: released | modifiedDate: 2023-11-30T15:53:37.136Z | scopeNote: nan | definition: nan | inScheme: http://data.europa.eu/esco/concept-schem | description: Assign and manage staff tasks in areas s
+      conceptType: KnowledgeSkillCompetence | conceptUri: http://data.europa.eu/esco/skill/0006473 | skillType: skill/competence | reuseLevel: occupation-specific | preferredLabel: supervise correctional procedures | altLabels: manage prison procedures
+monitor correct | hiddenLabels: nan | status: released | modifiedDate: 2023-11-30T15:04:00.689Z | scopeNote: nan | definition: nan | inScheme: http://data.europa.eu/esco/concept-schem | description: Supervise the operations of a correction
+      conceptType: KnowledgeSkillCompetence | conceptUri: http://data.europa.eu/esco/skill/000709e | skillType: skill/competence | reuseLevel: sector-specific | preferredLabel: apply anti-oppressive practices | altLabels: make use of anti-oppressive practices
+us | hiddenLabels: nan | status: released | modifiedDate: 2023-11-28T10:45:53.54Z | scopeNote: nan | definition: nan | inScheme: http://data.europa.eu/esco/concept-schem | description: Identify oppression in societies, econom
+
+FILE : occupationSkillRelations_en.csv
+SOURCE: ESCO v1.2.1
+  Rows             : 126,051
+  Columns          : 6
+  Column names     : ['occupationUri', 'occupationLabel', 'relationType', 'skillType', 'skillUri', 'skillLabel']
+  Data types:
+      occupationUri                                 str
+      occupationLabel                               str
+      relationType                                  str
+      skillType                                     str
+      skillUri                                      str
+      skillLabel                                    str
+  Missing values   : 1 column(s) have nulls
+      skillType                                     59 (0.05%)
+  Duplicate rows   : 0
+  Identifier columns detected:
+      occupationUri                                 3,039 unique values
+      skillUri                                      13,475 unique values
+  Sample rows (first 3):
+      occupationUri: http://data.europa.eu/esco/occupation/00 | occupationLabel: technical director | relationType: essential | skillType: knowledge | skillUri: http://data.europa.eu/esco/skill/fed5b26 | skillLabel: theatre techniques
+      occupationUri: http://data.europa.eu/esco/occupation/00 | occupationLabel: technical director | relationType: essential | skillType: skill/competence | skillUri: http://data.europa.eu/esco/skill/05bc767 | skillLabel: organise rehearsals
+      occupationUri: http://data.europa.eu/esco/occupation/00 | occupationLabel: technical director | relationType: essential | skillType: skill/competence | skillUri: http://data.europa.eu/esco/skill/271a36a | skillLabel: write risk assessment on performing arts
+
+FILE : skillsHierarchy_en.csv
+SOURCE: ESCO v1.2.1
+  Rows             : 640
+  Columns          : 14
+  Column names     : ['Level 0 URI', 'Level 0 preferred term', 'Level 1 URI', 'Level 1 preferred term', 'Level 2 URI', 'Level 2 preferred term', 'Level 3 URI', 'Level 3 preferred term', 'Description', 'Scope note', 'Level 0 code', 'Level 1 code', 'Level 2 code', 'Level 3 code']
+  Data types:
+      Level 0 URI                                   str
+      Level 0 preferred term                        str
+      Level 1 URI                                   str
+      Level 1 preferred term                        str
+      Level 2 URI                                   str
+      Level 2 preferred term                        str
+      Level 3 URI                                   str
+      Level 3 preferred term                        str
+      Description                                   str
+      Scope note                                    str
+      Level 0 code                                  str
+      Level 1 code                                  str
+      Level 2 code                                  str
+      Level 3 code                                  str
+  Missing values   : 11 column(s) have nulls
+      Level 1 URI                                   4 (0.62%)
+      Level 1 preferred term                        4 (0.62%)
+      Level 2 URI                                   32 (5.0%)
+      Level 2 preferred term                        32 (5.0%)
+      Level 3 URI                                   188 (29.38%)
+      Level 3 preferred term                        188 (29.38%)
+      Description                                   133 (20.78%)
+      Scope note                                    316 (49.38%)
+      Level 1 code                                  4 (0.62%)
+      Level 2 code                                  32 (5.0%)
+      Level 3 code                                  188 (29.38%)
+  Duplicate rows   : 0
+  Identifier columns detected:
+      Level 0 URI                                   4 unique values
+      Level 1 URI                                   28 unique values
+      Level 2 URI                                   156 unique values
+      Level 3 URI                                   452 unique values
+      Level 0 code                                  4 unique values
+  Sample rows (first 3):
+      Level 0 URI: http://data.europa.eu/esco/skill/e35a593 | Level 0 preferred term: language skills and knowledge | Level 1 URI: nan | Level 1 preferred term: nan | Level 2 URI: nan | Level 2 preferred term: nan | Level 3 URI: nan | Level 3 preferred term: nan | Description: nan | Scope note: nan | Level 0 code: L | Level 1 code: nan | Level 2 code: nan | Level 3 code: nan
+      Level 0 URI: http://data.europa.eu/esco/skill/e35a593 | Level 0 preferred term: language skills and knowledge | Level 1 URI: http://data.europa.eu/esco/skill/43f425a | Level 1 preferred term: languages | Level 2 URI: nan | Level 2 preferred term: nan | Level 3 URI: nan | Level 3 preferred term: nan | Description: Ability to communicate through reading,  | Scope note: nan | Level 0 code: L | Level 1 code: L1 | Level 2 code: nan | Level 3 code: nan
+      Level 0 URI: http://data.europa.eu/esco/skill/e35a593 | Level 0 preferred term: language skills and knowledge | Level 1 URI: http://data.europa.eu/esco/skill/e434e71 | Level 1 preferred term: classical languages | Level 2 URI: nan | Level 2 preferred term: nan | Level 3 URI: nan | Level 3 preferred term: nan | Description: All dead languages, no longer actively u | Scope note: Excludes:
+- all languages that are activ | Level 0 code: L | Level 1 code: L2 | Level 2 code: nan | Level 3 code: nan
+
+FILE : skillGroups_en.csv
+SOURCE: ESCO v1.2.1
+  Rows             : 640
+  Columns          : 11
+  Column names     : ['conceptType', 'conceptUri', 'preferredLabel', 'altLabels', 'hiddenLabels', 'status', 'modifiedDate', 'scopeNote', 'inScheme', 'description', 'code']
+  Data types:
+      conceptType                                   str
+      conceptUri                                    str
+      preferredLabel                                str
+      altLabels                                     str
+      hiddenLabels                                  str
+      status                                        str
+      modifiedDate                                  str
+      scopeNote                                     str
+      inScheme                                      str
+      description                                   str
+      code                                          str
+  Missing values   : 5 column(s) have nulls
+      altLabels                                     528 (82.5%)
+      hiddenLabels                                  623 (97.34%)
+      modifiedDate                                  301 (47.03%)
+      scopeNote                                     316 (49.38%)
+      description                                   133 (20.78%)
+  Duplicate rows   : 0
+  Identifier columns detected:
+      conceptType                                   1 unique values
+      conceptUri                                    640 unique values
+      hiddenLabels                                  17 unique values
+      code                                          640 unique values
+  Sample rows (first 3):
+      conceptType: SkillGroup | conceptUri: http://data.europa.eu/esco/isced-f/00 | preferredLabel: generic programmes and qualifications | altLabels: nan | hiddenLabels: nan | status: released | modifiedDate: nan | scopeNote: nan | inScheme: http://data.europa.eu/esco/concept-schem | description: Generic programmes and qualifications ar | code: 00
+      conceptType: SkillGroup | conceptUri: http://data.europa.eu/esco/isced-f/000 | preferredLabel: generic programmes and qualifications no | altLabels: nan | hiddenLabels: nan | status: released | modifiedDate: 2023-07-13T15:16:44.968Z | scopeNote: nan | inScheme: http://data.europa.eu/esco/concept-schem | description: nan | code: 000
+      conceptType: SkillGroup | conceptUri: http://data.europa.eu/esco/isced-f/0000 | preferredLabel: generic programmes and qualifications no | altLabels: nan | hiddenLabels: nan | status: released | modifiedDate: nan | scopeNote: nan | inScheme: http://data.europa.eu/esco/concept-schem | description: nan | code: 0000
+
+FILE : broaderRelationsSkillPillar_en.csv
+SOURCE: ESCO v1.2.1
+  Rows             : 20,819
+  Columns          : 6
+  Column names     : ['conceptType', 'conceptUri', 'conceptLabel', 'broaderType', 'broaderUri', 'broaderLabel']
+  Data types:
+      conceptType                                   str
+      conceptUri                                    str
+      conceptLabel                                  str
+      broaderType                                   str
+      broaderUri                                    str
+      broaderLabel                                  str
+  Missing values   : None
+  Duplicate rows   : 0
+  Identifier columns detected:
+      conceptType                                   2 unique values
+      conceptUri                                    14,575 unique values
+      conceptLabel                                  14,444 unique values
+      broaderUri                                    2,856 unique values
+  Sample rows (first 3):
+      conceptType: SkillGroup | conceptUri: http://data.europa.eu/esco/isced-f/00 | conceptLabel: generic programmes and qualifications | broaderType: SkillGroup | broaderUri: http://data.europa.eu/esco/skill/c46fcb4 | broaderLabel: knowledge
+      conceptType: SkillGroup | conceptUri: http://data.europa.eu/esco/isced-f/000 | conceptLabel: generic programmes and qualifications no | broaderType: SkillGroup | broaderUri: http://data.europa.eu/esco/isced-f/00 | broaderLabel: generic programmes and qualifications
+      conceptType: SkillGroup | conceptUri: http://data.europa.eu/esco/isced-f/0000 | conceptLabel: generic programmes and qualifications no | broaderType: SkillGroup | broaderUri: http://data.europa.eu/esco/isced-f/000 | broaderLabel: generic programmes and qualifications no
+
+FILE : skillSkillRelations_en.csv
+SOURCE: ESCO v1.2.1
+  Rows             : 5,818
+  Columns          : 5
+  Column names     : ['originalSkillUri', 'originalSkillType', 'relationType', 'relatedSkillType', 'relatedSkillUri']
+  Data types:
+      originalSkillUri                              str
+      originalSkillType                             str
+      relationType                                  str
+      relatedSkillType                              str
+      relatedSkillUri                               str
+  Missing values   : None
+  Duplicate rows   : 0
+  Identifier columns detected:
+      originalSkillUri                              3,759 unique values
+      relatedSkillUri                               1,953 unique values
+  Sample rows (first 3):
+      originalSkillUri: http://data.europa.eu/esco/skill/0006473 | originalSkillType: skill/competence | relationType: optional | relatedSkillType: knowledge | relatedSkillUri: http://data.europa.eu/esco/skill/d4a0744
+      originalSkillUri: http://data.europa.eu/esco/skill/000bb1e | originalSkillType: skill/competence | relationType: optional | relatedSkillType: knowledge | relatedSkillUri: http://data.europa.eu/esco/skill/b70ab67
+      originalSkillUri: http://data.europa.eu/esco/skill/0023e7a | originalSkillType: skill/competence | relationType: optional | relatedSkillType: knowledge | relatedSkillUri: http://data.europa.eu/esco/skill/5753e2c
+
+FILE : ISCOGroups_en.csv
+SOURCE: ESCO v1.2.1
+  Rows             : 619
+  Columns          : 8
+  Column names     : ['conceptType', 'conceptUri', 'code', 'preferredLabel', 'status', 'altLabels', 'inScheme', 'description']
+  Data types:
+      conceptType                                   str
+      conceptUri                                    str
+      code                                          int64
+      preferredLabel                                str
+      status                                        str
+      altLabels                                     float64
+      inScheme                                      str
+      description                                   str
+  Missing values   : 1 column(s) have nulls
+      altLabels                                     619 (100.0%)
+  Duplicate rows   : 0
+  Identifier columns detected:
+      conceptType                                   1 unique values
+      conceptUri                                    619 unique values
+      code                                          613 unique values
+  Sample rows (first 3):
+      conceptType: ISCOGroup | conceptUri: http://data.europa.eu/esco/isco/C0 | code: 0 | preferredLabel: Armed forces occupations | status: released | altLabels: nan | inScheme: http://data.europa.eu/esco/concept-schem | description: Armed forces occupations include all job
+      conceptType: ISCOGroup | conceptUri: http://data.europa.eu/esco/isco/C01 | code: 1 | preferredLabel: Commissioned armed forces officers | status: released | altLabels: nan | inScheme: http://data.europa.eu/esco/concept-schem | description: Commissioned armed forces officers provi
+      conceptType: ISCOGroup | conceptUri: http://data.europa.eu/esco/isco/C011 | code: 11 | preferredLabel: Commissioned armed forces officers | status: released | altLabels: nan | inScheme: http://data.europa.eu/esco/concept-schem | description: Commissioned armed forces officers provi
+
+FILE : digitalSkillsCollection_en.csv
+SOURCE: ESCO v1.2.1
+  Rows             : 1,284
+  Columns          : 10
+  Column names     : ['conceptType', 'conceptUri', 'preferredLabel', 'status', 'skillType', 'reuseLevel', 'altLabels', 'description', 'broaderConceptUri', 'broaderConceptPT']
+  Data types:
+      conceptType                                   str
+      conceptUri                                    str
+      preferredLabel                                str
+      status                                        str
+      skillType                                     str
+      reuseLevel                                    str
+      altLabels                                     str
+      description                                   str
+      broaderConceptUri                             str
+      broaderConceptPT                              str
+  Missing values   : 1 column(s) have nulls
+      altLabels                                     12 (0.93%)
+  Duplicate rows   : 0
+  Identifier columns detected:
+      conceptType                                   1 unique values
+      conceptUri                                    1,284 unique values
+      broaderConceptUri                             478 unique values
+      broaderConceptPT                              475 unique values
+  Sample rows (first 3):
+      conceptType: KnowledgeSkillCompetence | conceptUri: http://data.europa.eu/esco/skill/000f1d3 | preferredLabel: Haskell | status: released | skillType: knowledge | reuseLevel: sector-specific | altLabels: Haskell techniques | description: The techniques and principles of softwar | broaderConceptUri: http://data.europa.eu/esco/skill/21d2f96 | broaderConceptPT: computer programming | software and appl
+      conceptType: KnowledgeSkillCompetence | conceptUri: http://data.europa.eu/esco/skill/00c04e4 | preferredLabel: incremental development | status: released | skillType: knowledge | reuseLevel: sector-specific | altLabels: gradual development | description: The incremental development model is a m | broaderConceptUri: http://data.europa.eu/esco/skill/bec4359 | broaderConceptPT: ICT project management methodologies | s
+      conceptType: KnowledgeSkillCompetence | conceptUri: http://data.europa.eu/esco/skill/013441c | preferredLabel: KDevelop | status: released | skillType: knowledge | reuseLevel: sector-specific | altLabels: kdevplatform | KDevelop platform | description: The computer program KDevelop is a suite | broaderConceptUri: http://data.europa.eu/esco/skill/925463a | broaderConceptPT: integrated development environment softw
+
+FILE : transversalSkillsCollection_en.csv
+SOURCE: ESCO v1.2.1
+  Rows             : 95
+  Columns          : 10
+  Column names     : ['conceptType', 'conceptUri', 'skillType', 'reuseLevel', 'preferredLabel', 'status', 'altLabels', 'description', 'broaderConceptUri', 'broaderConceptPT']
+  Data types:
+      conceptType                                   str
+      conceptUri                                    str
+      skillType                                     str
+      reuseLevel                                    str
+      preferredLabel                                str
+      status                                        str
+      altLabels                                     str
+      description                                   str
+      broaderConceptUri                             str
+      broaderConceptPT                              str
+  Missing values   : None
+  Duplicate rows   : 0
+  Identifier columns detected:
+      conceptType                                   1 unique values
+      conceptUri                                    95 unique values
+      broaderConceptUri                             24 unique values
+      broaderConceptPT                              24 unique values
+  Sample rows (first 3):
+      conceptType: KnowledgeSkillCompetence | conceptUri: http://data.europa.eu/esco/skill/001115f | skillType: skill/competence | reuseLevel: transversal | preferredLabel: show initiative | status: released | altLabels: initiate action | be a driving force | g | description: Be proactive and take the first step in  | broaderConceptUri: http://data.europa.eu/esco/skill/9186099 | broaderConceptPT: taking a proactive approach
+      conceptType: KnowledgeSkillCompetence | conceptUri: http://data.europa.eu/esco/skill/0171653 | skillType: skill/competence | reuseLevel: transversal | preferredLabel: adopt ways to foster biodiversity and an | status: released | altLabels: concretely support biodiversity and anim | description: Engage in behaviours that help maintaini | broaderConceptUri: http://data.europa.eu/esco/skill/80cf002 | broaderConceptPT: applying environmental skills and compet
+      conceptType: KnowledgeSkillCompetence | conceptUri: http://data.europa.eu/esco/skill/045f71e | skillType: skill/competence | reuseLevel: transversal | preferredLabel: advise others | status: released | altLabels: mentor others | mentor individuals | cou | description: Offer suggestions about the best course  | broaderConceptUri: http://data.europa.eu/esco/skill/82463bb | broaderConceptPT: supporting others
+
+======================================================================
+  INSPECTION SUMMARY
+======================================================================
+
+O*NET files:
+  File                                                     Rows   Cols  Status
+  -------------------------------------------------- ----------  -----  ------
+  Occupation Data.xlsx                                    1,016      3  OK
+  Skills.xlsx                                                 —      —  MISSING or ERROR
+  Knowledge.xlsx                                         60,060     15  OK
+  Abilities.xlsx                                         94,640     15  OK
+  Essential Skills.xlsx                                  18,200     15  OK
+  Transferable Skills.xlsx                               45,500     15  OK
+  Task Statements.xlsx                                   18,838      8  OK
+  Education.xlsx                                         11,495     15  OK
+  Job Zones.xlsx                                            923      5  OK
+  Content Model Reference.xlsx                            3,006      3  OK
+  Software Skills.xlsx                                   31,821      7  OK
+  Related Occupations.xlsx                               18,460      6  OK
+  Career Interest Types.xlsx                              8,307      9  OK
+  Scales Reference.xlsx                                      33      4  OK
+
+ESCO files:
+  File                                                          Rows   Cols  Status
+  ------------------------------------------------------- ----------  -----  ------
+  occupations_en.csv                                           3,043     15  OK
+  skills_en.csv                                               13,960     13  OK
+  occupationSkillRelations_en.csv                            126,051      6  OK
+  skillsHierarchy_en.csv                                         640     14  OK
+  skillGroups_en.csv                                             640     11  OK
+  broaderRelationsSkillPillar_en.csv                          20,819      6  OK
+  skillSkillRelations_en.csv                                   5,818      5  OK
+  ISCOGroups_en.csv                                              619      8  OK
+  digitalSkillsCollection_en.csv                               1,284     10  OK
+  transversalSkillsCollection_en.csv                              95     10  OK
+
+Report saved to: C:\Users\Bhuvana Kruthi\OneDrive\Documents\AI-Career-Guidance\reports\data_inspection_report.txt

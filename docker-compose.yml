@@ -1,0 +1,76 @@
+services:
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set MYSQL_ROOT_PASSWORD in .env}
+      MYSQL_DATABASE: ai_career_guidance
+      MYSQL_USER: ${DATABASE_USERNAME:-career_guidance}
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD:?Set DATABASE_PASSWORD in .env}
+    volumes:
+      - career-guidance-mysql:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u root -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    restart: unless-stopped
+    environment:
+      SERVER_ADDRESS: 0.0.0.0
+      SERVER_PORT: 8091
+      SPRING_PROFILES_ACTIVE: prod
+      PROJECT_ROOT: /app
+      PYTHON_EXECUTABLE: /opt/venv/bin/python
+      AUTH_ENABLED: ${AUTH_ENABLED:-false}
+      JWT_SECRET: ${JWT_SECRET:-}
+      AUTH_COOKIE_SECURE: ${AUTH_COOKIE_SECURE:-false}
+      ADMIN_EMAIL: ${ADMIN_EMAIL:-}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD:-}
+      ADMIN_NAME: ${ADMIN_NAME:-}
+      DATABASE_URL: jdbc:mysql://mysql:3306/ai_career_guidance?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      DATABASE_USERNAME: ${DATABASE_USERNAME:-career_guidance}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD:?Set DATABASE_PASSWORD in .env}
+      CORS_ORIGINS: ${CORS_ORIGINS:-}
+      CAREER_AI_API_KEY: ${CAREER_AI_API_KEY:-}
+      CAREER_AI_BASE_URL: ${CAREER_AI_BASE_URL:-https://api.openai.com/v1}
+      CAREER_AI_MODEL: ${CAREER_AI_MODEL:-gpt-4o-mini}
+      ASSESSMENT_MAX_BODY_BYTES: ${ASSESSMENT_MAX_BODY_BYTES:-2097152}
+    ports:
+      - "127.0.0.1:8091:8091"
+    volumes:
+      - type: bind
+        source: ${PROCESSED_DATA_DIR:-./data/processed}
+        target: /app/data/processed
+        read_only: true
+        bind:
+          create_host_path: false
+    depends_on:
+      mysql:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://127.0.0.1:8091/api/health >/dev/null"]
+      interval: 30s
+      timeout: 10s
+      start_period: 90s
+      retries: 3
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_AUTH_ENABLED: ${VITE_AUTH_ENABLED:-false}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8081:8080"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  career-guidance-mysql:

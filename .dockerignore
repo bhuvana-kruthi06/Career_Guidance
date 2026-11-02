@@ -1,0 +1,15 @@
+.git
+.env
+.pytest_cache
+.pytest-workspace-temp
+venv
+.venv
+node_modules
+frontend/node_modules
+frontend/dist
+backend/target/*
+!backend/target/career-guidance-api-0.1.0.jar
+data/raw
+data/processed
+reports/charts
+*.log

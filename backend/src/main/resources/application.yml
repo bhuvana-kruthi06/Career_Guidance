@@ -1,0 +1,36 @@
+server:
+  port: ${SERVER_PORT:8091}
+  address: ${SERVER_ADDRESS:127.0.0.1}
+spring:
+  application:
+    name: ai-career-guidance-api
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 6MB
+  profiles:
+    default: dev
+  flyway:
+    enabled: ${AUTH_ENABLED:false}
+career-guidance:
+  project-root: ${PROJECT_ROOT:.}
+  ai:
+    api-key: ${CAREER_AI_API_KEY:}
+    base-url: ${CAREER_AI_BASE_URL:https://api.openai.com/v1}
+    model: ${CAREER_AI_MODEL:gpt-4o-mini}
+  python-executable: ${PYTHON_EXECUTABLE:venv/Scripts/python.exe}
+  request:
+    max-body-bytes: ${MATCH_MAX_BODY_BYTES:16384}
+    assessment-max-body-bytes: ${ASSESSMENT_MAX_BODY_BYTES:2097152}
+  rate-limit:
+    capacity: ${MATCH_RATE_LIMIT_CAPACITY:20}
+  matcher:
+    max-concurrent: ${MATCH_MAX_CONCURRENT:4}
+  auth:
+    enabled: ${AUTH_ENABLED:false}
+    jwt-secret: ${JWT_SECRET:}
+    access-token-seconds: ${AUTH_ACCESS_TOKEN_SECONDS:900}
+    refresh-token-days: ${AUTH_REFRESH_TOKEN_DAYS:30}
+    cookie-secure: ${AUTH_COOKIE_SECURE:false}
+    login-rate-capacity: ${AUTH_LOGIN_RATE_CAPACITY:5}
+    registration-rate-capacity: ${AUTH_REGISTRATION_RATE_CAPACITY:5}
